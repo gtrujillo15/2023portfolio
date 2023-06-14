@@ -2,3 +2,6 @@ plugins
 upgrade
 uploads
 themes/twentytwentythree
+themes/portfolio/node_modules
+themes/portfolio/package-lock.json
+themes/portfolio/style.css.map
