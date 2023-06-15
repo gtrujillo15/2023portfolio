@@ -21,3 +21,23 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.entry-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	max-width: 700px;
+	margin: auto;
+    padding: 10px 25px 50px 25px;
+}
+
+a {
+	text-decoration: none;
+
+}
+a:hover, a:focus {
+	text-decoration: underline;
+}

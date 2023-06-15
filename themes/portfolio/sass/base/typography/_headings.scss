@@ -8,5 +8,19 @@ h6 {
 	font-family: $font__header;
 	font-weight: 900;
 	font-style: italic;
+	margin: 0;
+}
+
+h1 {
 	font-size: 5rem;
+	@media (max-width: 767.98px) {
+		font-size: 3rem;
+	}
+}
+
+h2 {
+	font-size: 4rem;
+	@media (max-width: 767.98px) {
+		font-size: 2rem;
+	}
 }
