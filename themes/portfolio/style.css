@@ -403,7 +403,25 @@ h6 {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: italic;
+  margin: 0;
+}
+
+h1 {
   font-size: 5rem;
+}
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+}
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 p {
@@ -743,9 +761,24 @@ textarea {
   margin: 0 0 1.5em;
 }
 
-.front-page-main {
-  max-width: 1400px;
-  padding: 25px 25px 50px 25px;
+.entry-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 10px 25px 50px 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
 }
 
 /* Comments
