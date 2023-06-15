@@ -1,6 +1,9 @@
 .main-navigation {
-	display: block;
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1400px;
+	padding: 50px 25px 15px 25px;
 
 	ul {
 		display: none;
@@ -51,9 +54,11 @@
 
 	li {
 		position: relative;
+		padding: 0 20px;
 
 		&:hover > a,
 		&.focus > a {
+			text-decoration: underline;
 		}
 	}
 
@@ -69,6 +74,17 @@
 	}
 }
 
+.site-header {
+	max-width: 1400px;
+	margin: auto;
+	padding: 20px;
+
+	.site-branding {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
