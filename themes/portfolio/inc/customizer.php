@@ -59,3 +59,53 @@ function portfolio_customize_preview_js() {
 	wp_enqueue_script( 'portfolio-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
 add_action( 'customize_preview_init', 'portfolio_customize_preview_js' );
+
+// Gabriela Trujillo Customize
+function gabriela_customize_register( $wp_customize ) {
+	// Social Media Links
+	$wp_customize->add_section('social_media_options', array(
+        'title' => 'Social Media Links',
+        'priority' => 140,
+	));
+	// GitHub Link
+	$wp_customize->add_setting( 'github_link', array(
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+	$wp_customize->add_control( 'github_link', array(
+		'type' => 'url',
+		'section' => 'social_media_options',
+		'label' => __( 'GitHub Link' ),
+	));
+	// LinkedIn Link
+	$wp_customize->add_setting( 'linkedin_link', array(
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+	$wp_customize->add_control( 'linkedin_link', array(
+		'type' => 'url',
+		'section' => 'social_media_options',
+		'label' => __( 'LinkedIn Link' ),
+	));
+	// Instagram Link
+	$wp_customize->add_setting( 'instagram_link', array(
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+	$wp_customize->add_control( 'instagram_link', array(
+		'type' => 'url',
+		'section' => 'social_media_options',
+		'label' => __( 'Instagram Link' ),
+	));
+	// Email Link
+	$wp_customize->add_setting( 'email', array(
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+	$wp_customize->add_control( 'email', array(
+		'type' => 'url',
+		'section' => 'social_media_options',
+		'label' => __( 'Email' ),
+	));
+}
+add_action( 'customize_register', 'gabriela_customize_register' );

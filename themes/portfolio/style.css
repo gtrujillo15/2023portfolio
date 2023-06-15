@@ -735,6 +735,24 @@ textarea {
   flex: 1 0 50%;
 }
 
+.site-footer .site-info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.site-footer .site-info .social-media-link {
+  line-height: 0;
+  margin: 0 15px;
+}
+.site-footer .site-info .social-media-link svg {
+  width: 30px;
+  height: 30px;
+  fill: #424B54;
+}
+.site-footer .site-info .social-media-link svg:hover, .site-footer .site-info .social-media-link svg:focus {
+  fill: #000;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
