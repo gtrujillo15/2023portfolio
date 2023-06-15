@@ -9,24 +9,38 @@
  * @package portfolio
  */
 
+$github_url = get_theme_mod('github_link');
+$linkedin_url = get_theme_mod('linkedin_link');
+$instagram_url = get_theme_mod('instagram_link');
+$email = get_theme_mod('email');
+
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'portfolio' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'portfolio' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'portfolio' ), 'portfolio', '<a href="http://underscores.me/">gabriela trujillo</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<section class="site-info">
+			<?php if ($github_url): ?>
+				<a class="social-media-link" href="<?php echo $github_url; ?>" target="_blank">
+					<?php echo file_get_contents(get_template_directory_uri() . '/images/github.svg') ?>
+				</a>
+			<?php endif; ?>
+			<?php if ($linkedin_url): ?>
+				<a class="social-media-link" href="<?php echo $linkedin_url; ?>" target="_blank">
+					<?php echo file_get_contents(get_template_directory_uri() . '/images/linkedin.svg') ?>
+				</a>
+			<?php endif; ?>
+			<?php if ($instagram_url): ?>
+				<a class="social-media-link" href="<?php echo $instagram_url; ?>" target="_blank">
+					<?php echo file_get_contents(get_template_directory_uri() . '/images/instagram.svg') ?>
+				</a>
+			<?php endif; ?>
+			<?php if ($email): ?>
+				<a class="social-media-link" href="mailto:<?php echo $email; ?>" target="_blank">
+				<?php echo file_get_contents(get_template_directory_uri() . '/images/envelope.svg') ?>
+				</a>
+			<?php endif; ?>
+		</section>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 
