@@ -387,7 +387,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: #424B54;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -457,11 +457,11 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #F6EEEC;
 }
 
 hr {
-  background-color: #ccc;
+  background-color: #E1C5C0;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -579,7 +579,7 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea {
-  color: #666;
+  color: #424B54;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
@@ -721,6 +721,11 @@ textarea {
   margin: 0 0 1.5em;
 }
 
+.front-page-main {
+  max-width: 1400px;
+  padding: 50px;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -860,12 +865,12 @@ textarea {
   word-wrap: normal !important;
 }
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: #E1C5C0;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   clip-path: none;
-  color: #21759b;
+  color: #424B54;
   display: block;
   font-size: 0.875rem;
   font-weight: 700;

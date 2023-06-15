@@ -2,9 +2,9 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main front-page-main">
 
-
+        <?php the_content(); ?>
 
 	</main>
 
