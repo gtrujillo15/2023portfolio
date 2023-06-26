@@ -41,3 +41,35 @@ a {
 a:hover, a:focus {
 	text-decoration: underline;
 }
+
+.animation-content {
+	visibility: hidden;
+}
+
+@keyframes bounce {
+	0%, 100% {
+		transform: translateY(0);
+	  }
+	  50% {
+		transform: translateY(-20px);
+	  }
+}
+
+.bounce-animation {
+animation: bounce 3s ease infinite;
+}
+
+@keyframes fade-down {
+	0% {
+	  opacity: 0;
+	  transform: translateY(-20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+}
+
+.fade-down {
+	animation: fade-down 2s ease;
+}
