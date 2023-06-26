@@ -789,6 +789,10 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+.animation-content {
+  visibility: hidden;
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
