@@ -833,7 +833,7 @@ a:hover, a:focus {
   left: 0;
 }
 
-.site-main {
+.site-main, footer {
   z-index: 1;
   position: inherit;
 }
