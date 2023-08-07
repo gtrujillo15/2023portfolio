@@ -30,8 +30,13 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'portfolio' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<!-- Wave Background -->
+	<div class="svg-container">
+  		<svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+    		<path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:white;"></path>
+  		</svg>
 
+	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
 			<?php
 			wp_nav_menu(
