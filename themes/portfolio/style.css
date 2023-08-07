@@ -819,6 +819,25 @@ a:hover, a:focus {
   animation: fade-down 2s ease;
 }
 
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.svg-container > svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.site-main {
+  z-index: 1;
+  position: inherit;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {

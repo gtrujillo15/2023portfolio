@@ -25,7 +25,8 @@ get_header();
 
 		endwhile;
 		?>
-
+		<!-- Wave Background End Div -->
+		</div>
 	</main>
 
 <?php
