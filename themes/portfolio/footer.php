@@ -19,22 +19,22 @@ $email = get_theme_mod('email');
 	<footer id="colophon" class="site-footer">
 		<section class="site-info">
 			<?php if ($github_url): ?>
-				<a class="social-media-link" href="<?php echo $github_url; ?>" target="_blank">
+				<a class="social-media-link" href="<?php echo $github_url; ?>" target="_blank" aria-label="GitHub, opens a new window">
 					<?php echo file_get_contents(get_template_directory_uri() . '/images/github.svg') ?>
 				</a>
 			<?php endif; ?>
 			<?php if ($linkedin_url): ?>
-				<a class="social-media-link" href="<?php echo $linkedin_url; ?>" target="_blank">
+				<a class="social-media-link" href="<?php echo $linkedin_url; ?>" target="_blank" aria-label="LinkedIn, opens a new window">
 					<?php echo file_get_contents(get_template_directory_uri() . '/images/linkedin.svg') ?>
 				</a>
 			<?php endif; ?>
 			<?php if ($instagram_url): ?>
-				<a class="social-media-link" href="<?php echo $instagram_url; ?>" target="_blank">
+				<a class="social-media-link" href="<?php echo $instagram_url; ?>" target="_blank" aria-label="Instagram, opens a new window">
 					<?php echo file_get_contents(get_template_directory_uri() . '/images/instagram.svg') ?>
 				</a>
 			<?php endif; ?>
 			<?php if ($email): ?>
-				<a class="social-media-link" href="mailto:<?php echo $email; ?>" target="_blank">
+				<a class="social-media-link" href="mailto:<?php echo $email; ?>" target="_blank" aria-label="Email, opens a new window">
 				<?php echo file_get_contents(get_template_directory_uri() . '/images/envelope.svg') ?>
 				</a>
 			<?php endif; ?>
